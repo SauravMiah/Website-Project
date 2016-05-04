@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      body {
+        background-image: url("web-backround.jpeg");
+        background-size: cover;  
+        background-repeat: no-repeat;
+        background-color: #140e07; 
+        color: #fff;
+      }
+
+      .container {
+        max-width: 940px;
+      }
+
+      /* Main */
+      .main {
+        margin-top: 300px;
+        margin-left: 300px;
+      }
+
+      .main h1 {
+        font-size: 30px;
+        margin: 0 0 20px 0;
+      }
+        
+        p {
+            font-size: 75px;
+        }
+
+      /* Form */
+      form input.form-control {
+        font-size: 20px;
+        border: 0px;
+        border-radius: 0px;
+      }
+
+      .main .btn { 
+        margin-top: 30px; 
+        color: #fff;
+        background: rgba(0,240,190,0.25);
+        border: 0px;
+        border-radius: 0px; 
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <p>SunBester Register</p>
+            <form role="form">
+              <div class="form-group">
+                <label for="first">First name</label>
+                <input type="text" class="form-control" id="first">
+              </div>
+              <div class="form-group">
+                <label for="last">Last name</label>
+                <input type="text" class="form-control" id="last">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="example@example.com" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+                
+              <div>
+                  <label for="password">Repeat password</label>
+                  <input type="password" class="form-control" id="password">
+              </div>
+                
+              <button type="submit" class="btn">Create account</button>
+            </form>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
